@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하이퍼링크</title>
+  </head>
+  <body>
+    <h1>하이퍼링크</h1>
+    <h2>하이퍼링크 및 이미지 UI 예제</h2>
+    <hr />
+
+    <div>
+      <figure>
+        <img
+          src="/src/assets/cafew/card-02-@1x.jpg"
+          alt="카페에서 공부하는 사람들"
+        />
+        <figcaption>
+          <h3>
+            RESPONSIVE WEB <br />
+            DESIGN STRATEGIES
+          </h3>
+          <h3>반응형 웹디자인 전략</h3>
+          <a href="/">강의정보</a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <h2>텍스트 링크</h2>
+    <hr />
+    <!-- 그냥 blank를 하면 blank라는 예약어가 있나 살펴보고 없으면 blank라는 이름의 탭을 만들어 기본의 _blank 기능과는 거리가 멀어지는 현상이 나타난다. -->
+    <a href="https://bootcamp.likelion.net/" target="_blank"
+      >멋쟁이 사자처럼 부트캠프</a
+    >
+    <br />
+    <a href="https://github.com/jaehyun0620/">Github</a>
+    <br />
+    <a
+      href="https://www.naver.com/"
+      title="네이버 사이트로 이동합니다. (새창)"
+      target="_blank"
+      rel="noopener noreferner"
+      >네이버</a
+    >
+    <br />
+    <h2>이미지 링크</h2>
+    <hr />
+    <a href="https://www.apple.com/"
+      ><img src="/src/assets/apple/apple_watch.jpeg" alt="애플워치" width="200"
+    /></a>
+    <br />
+    <a
+      href="/src/assets/pdf/google-seo-guide-en.pdf"
+      download="search-engine-optimization-starter-guide.pdf"
+      >구글 SEO 가이드</a
+    >
+
+    <h2>전화번호 또는 이메일 주소로 하이퍼 링크</h2>
+    <a href="mailto:seulbinim@gmail.com?subject=문의사항"
+      >seulbinim@gmail.com</a
+    >
+    <br />
+    <a href="tel:+821023456789">고객센터 010-2345-6789</a>
+
+    <br />
+    <!-- case 1 -->
+    <h2><a href="/">제목</a></h2>
+    <p><a href="/">내용</a></p>
+
+    <!-- case 2 -->
+    <a href="/">
+      <h2>제목</h2>
+      <p>내용</p>
+    </a>
+    <!-- 1, 2 번 모두 가능하지만 통상적으로 1번을 사용하며 2번같은 경우 
+     스크린 리더를 한 경우 매우 복잡할 수 있다. -->
+  </body>
+</html>
