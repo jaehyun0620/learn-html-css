@@ -15,6 +15,7 @@
       alt="넷플릭스"
     />
     <hr />
+
     <img
       src="/src/assets/logo/netflix@1x.png"
       srcset="
@@ -25,5 +26,21 @@
       "
       alt="넷플릭스"
     />
+    <h2>W Descriptor 예시</h2>
+    <picture>
+      <source
+        srcset="/src/assets/rwd/small-550.jpg 550w"
+        media="(max-width: 500px)"
+      />
+      <source
+        srcset="/src/assets/rwd/medium-1024.jpg 1024w"
+        media="(max-width: 768px)"
+      />
+      <source
+        srcset="/src/assets/rwd/large-1600.jpg 1600w"
+        media="(max-width: 1024px)"
+      />
+      <img src="/src/assets/rwd/normal-1920.jpg" alt="" />
+    </picture>
   </body>
 </html>
