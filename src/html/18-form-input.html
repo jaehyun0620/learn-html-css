@@ -15,18 +15,79 @@
         <!-- input과 label은 일대일 대응으로 구조화시켜주어야 한다. -->
         <div>
           <label for="userName">이름</label>
-          <input type="text" id="userName" />
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            required
+            placeholder="예) 김재현"
+            maxlength="5"
+            minlength="3"
+          />
         </div>
 
         <div>
           <label for="userPwd">비밀번호</label>
-          <input type="password" id="userPwd" />
+          <input
+            type="password"
+            id="userPwd"
+            name="userPwd"
+            required
+            placeholder="8자리 이상"
+          />
         </div>
 
         <div>
           <label for="likelionSearch">검색</label>
-          <input type="search" id="likelionSearch" />
+          <input type="search" id="likelionSearch" name="likelionSearch" />
         </div>
+
+        <div>
+          <label for="userEmail">이메일</label>
+          <input type="email" id="userEmail" name="userEmail" />
+        </div>
+
+        <div>
+          <label for="userPhone">연락처</label>
+          <input type="tel" id="userPhone" name="userPhone" />
+        </div>
+        <div>
+          <input type="checkbox" name="classLikelion" id="classHtml" />
+          <label for="classHtml">HTML</label>
+        </div>
+
+        <div>
+          <input type="checkbox" checked name="classLikelion" id="classCss" />
+          <label for="classCss">Css</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="classLikelion" id="classJs" />
+          <label for="classJs">Js</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            value="classRoom1"
+            checked
+            name="classRoom"
+            id="classRoom1"
+          />
+          <label for="classRoom1">회고 1팀</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            value="classRoom2"
+            name="classRoom"
+            id="classRoom2"
+          />
+          <label for="classRoom2">회고 2팀</label>
+        </div>
+
+        <input type="submit" value="전송" name="submit" />
       </fieldset>
     </form>
   </body>
