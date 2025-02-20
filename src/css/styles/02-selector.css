@@ -1,0 +1,76 @@
+body {
+  background-color: #ffc;
+}
+
+/* 태그 선택자 */
+p {
+  color: red;
+
+  &:hover {
+    background-color: skyblue;
+  }
+
+  &:focus {
+    border: 10px solid red;
+  }
+}
+
+/* 클래스 선택자 */
+
+.like {
+  color: green;
+}
+
+/* 아이디 선택자 */
+
+#lion {
+  color: blue;
+}
+
+[title] {
+  color: purple;
+}
+
+a[href^='https'] {
+  text-decoration: none;
+}
+
+a[href$='pdf'] {
+  background-color: blueviolet;
+}
+
+/* 가상 클래스 선택자 */
+/* 주로 앵커태그에 자주씀 */
+a:link {
+  color: black;
+}
+
+/* 방문한 링크 색 변함 */
+a:visited {
+  color: olive;
+}
+
+/* 마우스를 올려두면 변화 보임 */
+a:hover {
+  color: blue;
+}
+
+/* 키보드 포커스 */
+a:focus {
+  color: aqua;
+}
+
+/* 클릭을 선택하는 순간(액티브 동작시) css 적용용 */
+a:active {
+  background-color: darkblue;
+}
+
+/* 가상 요소 선택자 */
+/* before, after는 필수적으로 content가 필요하다. */
+h1::before {
+  content: '멋사';
+}
+
+h1::after {
+  content: '13기';
+}
