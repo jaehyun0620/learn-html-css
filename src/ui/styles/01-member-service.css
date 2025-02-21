@@ -1,0 +1,43 @@
+/* 클래스 선택자 */
+/* 배경 색상 변경 */
+body {
+  background-color: greenyellow;
+}
+/* font-variant로도 변경가능하지만 소문자로 변해서 다른 속성을 적용해보았음 */
+.member-service {
+  background-color: yellow;
+  text-transform: uppercase;
+}
+
+/* 태그 선택자 */
+/* 웹브라우저 스타일(밑줄)을 재정의 */
+/* 웹브라우저 링크 스타일(색상)을 재정의 (상속) */
+
+/* a요소이면서 가상요소 선택자 */
+.item::before {
+  content: ':';
+}
+
+/* a 요소보다 우선순위 */
+.first::before {
+  content: '';
+}
+
+.botanic {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a::before {
+    content: '| ';
+  }
+
+  .first::before {
+    content: '';
+  }
+
+  a::first-letter {
+    text-transform: uppercase;
+  }
+}

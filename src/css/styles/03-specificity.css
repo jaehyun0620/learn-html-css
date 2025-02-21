@@ -1,9 +1,9 @@
 * {
-  margin: 0;
+  /* margin: 0; */
 }
 
 body {
-  color: olive;
+  /* color: olive; */
 }
 
 h1 {
@@ -11,15 +11,15 @@ h1 {
 }
 
 .ai {
-  background-color: orange !important;
+  /* background-color: orange !important; */
 }
 
 body h2 + p {
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 body p[class] {
-  background-color: lime;
+  /* background-color: lime; */
 }
 
 #ai {
@@ -31,5 +31,10 @@ body p[class] {
 }
 
 a {
+  /* color: inherit; */
+}
+
+a {
+  text-decoration: none;
   color: inherit;
 }
