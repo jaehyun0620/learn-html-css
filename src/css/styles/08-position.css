@@ -1,0 +1,42 @@
+@import '/src/common/mini-reset.css';
+
+body {
+  margin: 50px;
+}
+
+.lion {
+  border: 1px solid black;
+  background-color: black;
+
+  .like {
+    border: 1px solid red;
+    background-color: yellow;
+    position: relative;
+    height: 50px;
+    top: -5px;
+    left: -5px;
+  }
+}
+
+.test {
+  border: 2px solid red;
+  width: auto;
+}
+
+.box {
+  /* position: relative; */
+  border: 1px solid blue;
+  height: 100px;
+  width: 100%;
+}
+
+.bootcamp {
+  background-color: aqua;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+h6 {
+  background-color: pink;
+}

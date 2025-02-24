@@ -48,3 +48,17 @@
   margin-left: -50px; */
   margin-left: -50px;
 }
+
+.aa {
+  display: inline-block;
+  width: auto;
+
+  border: 1px solid red;
+  background-color: yellow;
+}
+
+.bb {
+  width: auto;
+  border: 1px solid red;
+  background-color: yellow;
+}
