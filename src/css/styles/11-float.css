@@ -1,0 +1,39 @@
+@import '/src/common/theme.css';
+
+/* .mom-friend-son {
+  display: none;
+} */
+
+.card {
+  background: pink;
+  border: 1px solid green;
+  margin: 50px;
+
+  .thumbnail {
+    background: var(--pastel-yellow);
+    /* height: 140px; */
+    /* overflow: visible; */
+    display: flow-root;
+
+    img {
+      float: left;
+      width: 100px;
+      vertical-align: top;
+      /* vertical-align: top; 이미지 아래쪽 여백을 없애기 위한 트릭*/
+      /* display: block; 이미지 아래쪽 여백을 없애기 위한 트릭*/
+      position: relative;
+      right: 50px;
+    }
+  }
+
+  .subject {
+    background: var(--pastel-blue);
+  }
+
+  .content {
+    /* float 효과를 해제하기 위해 clear 속성을 사용할 수 있다. */
+    /* clear 속성은 반드시 block 성향을 가지는 요소에만 지정가능 */
+    /* clear: both; */
+    background: var(--pastel-orange);
+  }
+}
