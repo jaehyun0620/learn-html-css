@@ -1,0 +1,74 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/theme.css';
+
+.header {
+  background: var(--pastel-coral);
+  height: 10vh;
+}
+
+/* 네비게이션, 메인콘텐트, 사이드바 컨테이너 */
+.nav-main-aside-wrapper {
+  /* border: 5px solid red; */
+  @media (min-width: 1024px) {
+    display: flow-root;
+  }
+}
+
+.navigation {
+  background: var(--pastel-green);
+  height: 15vh;
+
+  @media (min-width: 1024px) {
+    width: 30%;
+    height: 75vw;
+    float: left;
+  }
+}
+
+/* 메인 콘텐츠 및 사이드바 컨테이너 */
+.content-wrapper {
+  /* border: 5px solid blue; */
+
+  @media (min-width: 768px) {
+    display: flow-root;
+  }
+}
+
+.content {
+  background: var(--pastel-aqua);
+  height: 40vh;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    height: 60vh;
+    float: left;
+  }
+
+  @media (min-width: 1024px) {
+    width: 60%;
+    height: 75vw;
+    float: left;
+  }
+}
+
+.sidebar {
+  background: var(--pastel-yellow);
+  height: 25vh;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    height: 60vh;
+    float: left;
+  }
+
+  @media (min-width: 1024px) {
+    width: 40%;
+    height: 75vw;
+    float: left;
+  }
+}
+
+.footer {
+  background: var(--pastel-lavender);
+  height: 15vh;
+}

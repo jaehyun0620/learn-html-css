@@ -1,0 +1,95 @@
+@import '/src/common/best-reset.css';
+
+body {
+  font-size: larger;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.header {
+  background: #ffff00;
+  height: 10vh;
+}
+
+.navi {
+  background: #ff0000;
+  height: 10vh;
+}
+
+.wrapper {
+  @media (min-width: 768px) {
+    display: flow-root;
+  }
+
+  @media (min-width: 1024px) {
+    display: flow-root;
+  }
+}
+
+.content-main {
+  @media (min-width: 768px) {
+    float: left;
+    width: 70%;
+  }
+
+  @media (min-width: 1024px) {
+    display: flow-root;
+    width: 70%;
+  }
+}
+
+.content-one {
+  background: #f5f5dc;
+  height: 25vh;
+
+  @media (min-width: 768px) {
+    background: #ff8000;
+    height: 35vh;
+  }
+
+  @media (min-width: 1024px) {
+    height: 70vh;
+    float: left;
+    width: 50%;
+  }
+}
+
+.content-two {
+  background: #00ff00;
+  height: 25vh;
+
+  @media (min-width: 768px) {
+    height: 35vh;
+  }
+
+  @media (min-width: 1024px) {
+    height: 70vh;
+    float: left;
+    width: 50%;
+  }
+}
+
+.aside {
+  background: #00ffff;
+  height: 20vh;
+
+  @media (min-width: 768px) {
+    height: 70vh;
+    float: left;
+    width: 30%;
+  }
+
+  @media (min-width: 1024px) {
+    height: 70vh;
+    float: left;
+  }
+}
+
+.footer {
+  background: #a9a9a9;
+  height: 10vh;
+
+  @media (min-width: 1024px) {
+    background: #8800ff;
+  }
+}

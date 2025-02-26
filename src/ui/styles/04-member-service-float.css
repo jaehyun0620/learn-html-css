@@ -1,0 +1,59 @@
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SUIT', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* 멤버 서비스 */
+.member-service {
+  background-color: yellow;
+  display: flow-root;
+
+  a {
+    background-color: skyblue;
+    float: left;
+  }
+
+  a:nth-child(n + 2)::before {
+    background-color: purple;
+    content: '|';
+    margin: 0 1rem;
+  }
+}
+
+/* 멤버 링크 */
+.member-link {
+  display: flow-root;
+
+  li {
+    background-color: yellow;
+    float: left;
+  }
+
+  a {
+    background-color: skyblue;
+    float: left;
+  }
+
+  span {
+    background-color: purple;
+    float: left;
+    margin: 0 1rem;
+  }
+}
