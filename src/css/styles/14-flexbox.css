@@ -43,3 +43,33 @@ body *::after {
     font-size: 30px;
   }
 }
+
+.case-02 {
+  border: 1px solid green;
+  width: 502px;
+  inline-size: 502px;
+  display: flex;
+  flex-flow: row nowrap;
+
+  [class^='item'] {
+    border: 1px solid currentColor;
+    /* width: 100px;
+    inline-size: 100px;
+    height: 100px;
+    block-size: 100px; */
+    text-align: center;
+    align-content: center;
+    /* 아이템 가로 길이를 지정해준, 값을 지정한 경우 width값보다 우선순위가 높음 */
+    flex-basis: 200px;
+    /* 아이템 총 길이보다 컨테이너가 커서 여백이 남았을때 균등하게 나누어서 아이템에 여백을 부여함 */
+    flex-grow: 0;
+    /* 아이템들의 길이가 부모보다 클경우 동일하게 조금씩 줄이는 속성들들 */
+    flex-shrink: 1;
+    float: 0 1 200px;
+
+    &:nth-child(even) {
+      order: -1;
+      /* flex-grow: 2; */
+    }
+  }
+}
