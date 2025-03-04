@@ -70,3 +70,43 @@ h1 {
     }
   }
 }
+
+.case-03 {
+  /* background: yellow; */
+  margin-block-start: 50px;
+  display: flex;
+
+  [class*='test'] {
+    display: inline-block;
+    /* position: relative; */
+    border: 2px solid black;
+    inline-size: 100px;
+    block-size: 100px;
+    margin-left: -20px;
+    text-align: center;
+    align-content: center;
+    transition: all 2s 0s ease;
+    border-radius: 50%;
+
+    &:hover {
+      z-index: 1;
+      transform: scale(2);
+    }
+  }
+
+  .test1 {
+    background: red;
+  }
+
+  .test2 {
+    background: orange;
+  }
+
+  .test3 {
+    background: yellow;
+  }
+
+  .test4 {
+    background: green;
+  }
+}
