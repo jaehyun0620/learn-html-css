@@ -83,7 +83,8 @@ h1 {
     inline-size: 100px;
     block-size: 100px;
     margin-left: -20px;
-    text-align: center;
+    /* text-align: center; */
+    justify-content: center;
     align-content: center;
     transition: all 2s 0s ease;
     border-radius: 50%;

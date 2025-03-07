@@ -1,37 +1,6 @@
 @import '/src/common/modern-reset.css';
 @import '/src/common/theme.css';
 
-.container {
-  display: grid;
-  padding: 20px;
-  /* grid-template-rows: repeat(5, 100px);
-  grid-template-columns: repeat(12, 100px); */
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(12, 1fr);
-    max-width: 800px;
-    margin: 0 auto;
-
-    .header,
-    .navigation,
-    .footer {
-      grid-column: 1 / -1;
-    }
-    .content,
-    .sidebar {
-      grid-column: span 6;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    max-width: 1280px;
-    .navigation,
-    .sidebar {
-      grid-column: span 3;
-    }
-  }
-}
-
 /* 헤더 */
 .header {
   background: var(--pastel-coral);
@@ -64,4 +33,41 @@
 .footer {
   background: var(--pastel-lavender);
   height: 10vh;
+}
+
+.container {
+  border: 1px solid red;
+
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 850px;
+    margin: 0 auto;
+
+    .header,
+    .navigation,
+    .footer {
+      grid-column: 1 / -1;
+    }
+
+    .content,
+    .sidebar {
+      grid-column: span 6;
+      height: 65vh;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1400px;
+    .navigation,
+    .content,
+    .sidebar {
+      grid-column: span 4;
+      height: 65vh;
+    }
+
+    .header {
+      height: 25vh;
+    }
+  }
 }

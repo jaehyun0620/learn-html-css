@@ -2,3 +2,64 @@
 @import '/src/common/theme.css';
 @import '/src/common/a11y.css';
 @import '/src/common/base.css';
+
+.container {
+  background: var(--pastel-sky-blue);
+  padding: 1em;
+
+  .case {
+    /* border: 1px solid red; */
+    margin-block: 20px;
+  }
+
+  /* case - 01 컬럼 위드 */
+  .case-01 {
+    column-width: 15rem;
+    column-rule: 1px solid red;
+    column-gap: 2rem;
+  }
+
+  /* case - 02 컬럼 카운트 */
+  .case-02 {
+    column-count: 4;
+    column-rule: 1px dotted green;
+
+    span {
+      display: block;
+      background: var(--blue-700);
+      color: var(--white);
+      padding: 0.5em;
+      column-span: all;
+    }
+  }
+
+  /* case - 03 컬럼스 단축 속성 사용 */
+  .case-03 {
+    columns: 5rem;
+    column-rule: 3px double blue;
+  }
+
+  /* case - 04 컬럼스 단축 속성 사용 */
+  .case-04 {
+    columns: 2;
+    column-fill: balance;
+  }
+
+  /* case - 05 컬럼스 단축 속성 사용 */
+  .case-05 {
+    columns: 2;
+    column-fill: auto;
+    block-size: 100px;
+  }
+}
+
+.wrapper {
+  background: var(--pastel-purple);
+  padding: 1em;
+  columns: 3;
+
+  .case {
+    border: 2px solid red;
+    break-after: avoid;
+  }
+}

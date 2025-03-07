@@ -43,14 +43,13 @@
   .header {
     grid-column: content;
   }
-
   .navigation {
-    grid-column: content-start / full-end;
+    grid-column: full;
     display: grid;
     grid-template-columns: subgrid;
 
     .menu {
-      background: var(--pastel-dark-blue);
+      background: greenyellow;
       grid-column: content;
       display: grid;
       grid-template-columns: subgrid;
@@ -64,12 +63,10 @@
   .main {
     grid-column: content;
   }
-
   .sidebar {
     grid-column: content;
   }
-
   .footer {
-    grid-column: full;
+    grid-column: content;
   }
 }

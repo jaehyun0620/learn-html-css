@@ -8,19 +8,13 @@ body {
 }
 
 /* 카드 컴포넌트 */
+
 .card {
-  border: 1px solid var(--pastel-gray);
-  border-radius: 8px;
+  border: 1px solid var(--black);
   display: flex;
   flex-flow: column nowrap;
-  /* row-gap: 1rem; */
+  row-gap: 20px;
   padding: 1rem;
-  box-shadow: 0 0 8px 1px var(--pastel-gray);
-
-  .subject {
-    font-weight: 600;
-    font-size: 1.5rem;
-  }
 
   .thumbnail {
     background: yellow;
@@ -29,28 +23,33 @@ body {
       width: 100%;
       aspect-ratio: 3 / 2;
       object-fit: cover;
-      object-position: 50% 0;
+      object-position: 0 0;
     }
+  }
+
+  .subject {
+    font-size: large;
+    font-weight: 700;
   }
 
   .content {
     line-height: 1.5;
   }
+
   .more {
+    background: var(--blue-400);
+    color: var(--white);
     display: inline-flex;
     justify-content: center;
-    align-items: center;
-    /* text-align: center; */
-    background: var(--pastel-dark-blue);
-    color: var(--white);
-    padding: 1em;
+    padding: 10px;
   }
 }
 
 .container {
   display: grid;
+  gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-rows: repeat(4, auto);
 
   .card {
     display: grid;

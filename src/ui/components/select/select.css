@@ -1,0 +1,64 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+/* Select Ui */
+body {
+  padding: 20px;
+}
+
+/* select {
+  width: 150px;
+  padding: 10px;
+  padding-left: 40px;
+  border: 2px solid gray;
+  border-radius: 16px;
+  font-size: 16px;
+  background-color: white;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 16px;
+
+    option {
+      width: 3rem;
+    }
+  }
+
+  background:
+    url('/src/assets/icon/global.svg') no-repeat left 1rem center,
+    url('/src/assets/icon/triangle.svg') no-repeat right 1rem center;
+} */
+
+.select {
+  display: grid;
+  max-width: 500px;
+  margin: 0 auto;
+
+  svg,
+  select {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  svg {
+    margin: 0 0.5em;
+    pointer-events: none;
+    background: blue;
+  }
+  select {
+    background: yellow;
+    appearance: none;
+    padding: 0.5em 1.75em;
+    background: transparent;
+  }
+
+  .icon-global {
+    place-self: center start;
+  }
+  .icon-triangle {
+    place-self: center end;
+  }
+}
