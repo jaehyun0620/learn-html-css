@@ -19,15 +19,71 @@
     <link rel="stylesheet" href="/src/ui/styles/practice.css" />
   </head>
   <body>
-    <header class="header">머리말</header>
-    <nav class="navi">메뉴</nav>
-    <div class="wrapper">
-      <main class="content-main">
-        <div class="content-one">콘텐츠 섹션 1</div>
-        <div class="content-two">콘텐츠 섹션 2</div>
-      </main>
-      <aside class="aside">부가정보</aside>
-    </div>
-    <footer class="footer">바닥글</footer>
+    <h1>form 관련 요소</h1>
+    <h2>input 요소</h2>
+
+    <form action="/">
+      <fieldset>
+        <legend>폼 서식</legend>
+        <label for="user-name">이름</label>
+        <div>
+          <input
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="예) 김재현"
+            required
+          />
+        </div>
+        <div>
+          <label for="password">비밀번호</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="8자리 이상"
+          />
+        </div>
+        <div>
+          <label for="serch">검색</label>
+          <input type="search" id="search" name="search" />
+        </div>
+
+        <div>
+          <input type="checkbox" name="lion-class" id="html" />
+          <label for="lion-class">html</label>
+        </div>
+        <div>
+          <input checked type="checkbox" name="lion-class" id="css" />
+          <label for="lion-class">css</label>
+        </div>
+        <div>
+          <input type="checkbox" name="lion-class" id="js" />
+          <label for="lion-class">js</label>
+        </div>
+        <div>
+          <input type="radio" name="teams" id="team1" checked />
+          <label for="">team1</label>
+        </div>
+        <div>
+          <input type="radio" name="teams" id="team2" />
+          <label for="">team2</label>
+        </div>
+        <div><input type="submit" value="send" /></div>
+      </fieldset>
+    </form>
+
+    <details>
+      <summary>여기를 누르세요</summary>
+      <p>
+        AI 코딩 도구를 활용하면 코드 생성 및 자동화, 개발 워크플로우와의 통합
+        등이 가능하며 기존 개발 환경 대비 생산성을 높일 수 있습니다. 그러나
+        개발자를 꿈꾸며 학습을하는 예비 개발자에게 AI 코딩 도구는 양날의 검이 될
+        수 있습니다. AI 코딩 도구에만 의존하는 주니어 개발자는 경쟁력을 갖출 수
+        없기 때문입니다. 오히려 더 깊이 있게 언어를 학습하고 좋은 질문을 할 수
+        있도록 문해력(Literacy)을 기르는 것이 필요합니다. 다만 AI 도구를 완전히
+        배제하는 것이 아닌 학습을 위한 파트너로서 활용할 것을 추천합니다.
+      </p>
+    </details>
   </body>
 </html>
