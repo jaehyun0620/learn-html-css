@@ -1,95 +1,39 @@
 @import '/src/common/best-reset.css';
 
 body {
-  font-size: larger;
-  font-weight: bolder;
+  margin: 10px;
+}
+
+fieldset {
+  padding: 10px;
+}
+
+.like-lion {
+  border: 1px solid black;
+  border-spacing: 0;
   text-align: center;
-}
+  margin-bottom: 20px;
 
-.header {
-  background: #ffff00;
-  height: 10vh;
-}
-
-.navi {
-  background: #ff0000;
-  height: 10vh;
-}
-
-.wrapper {
-  @media (min-width: 768px) {
-    display: flow-root;
-  }
-
-  @media (min-width: 1024px) {
-    display: flow-root;
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
   }
 }
 
-.content-main {
-  @media (min-width: 768px) {
-    float: left;
-    width: 70%;
-  }
+.lion {
+  border: 1px solid currentColor;
+  border-spacing: 0;
+  text-align: center;
 
-  @media (min-width: 1024px) {
-    display: flow-root;
-    width: 70%;
-  }
-}
-
-.content-one {
-  background: #f5f5dc;
-  height: 25vh;
-
-  @media (min-width: 768px) {
-    background: #ff8000;
-    height: 35vh;
-  }
-
-  @media (min-width: 1024px) {
-    height: 70vh;
-    float: left;
-    width: 50%;
+  th,
+  td {
+    border: 1px solid currentColor;
+    padding: 2px 4px;
   }
 }
 
-.content-two {
-  background: #00ff00;
-  height: 25vh;
-
-  @media (min-width: 768px) {
-    height: 35vh;
-  }
-
-  @media (min-width: 1024px) {
-    height: 70vh;
-    float: left;
-    width: 50%;
-  }
-}
-
-.aside {
-  background: #00ffff;
-  height: 20vh;
-
-  @media (min-width: 768px) {
-    height: 70vh;
-    float: left;
-    width: 30%;
-  }
-
-  @media (min-width: 1024px) {
-    height: 70vh;
-    float: left;
-  }
-}
-
-.footer {
-  background: #a9a9a9;
-  height: 10vh;
-
-  @media (min-width: 1024px) {
-    background: #8800ff;
-  }
+body {
+  background: linear-gradient(red, blue);
+  height: 100vh;
 }
