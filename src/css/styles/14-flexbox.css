@@ -10,21 +10,25 @@ body *::after {
 .case-03 {
   margin: 50px;
   border: 1px solid red;
-  inline-size: 700px;
-  block-size: 200px;
+  inline-size: 1000px;
+  block-size: 500px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
+  /* align-content: center; */
+  /* justify-content: center;
+  align-items: center;
+  align-content: center; */
 
   [class*='test'] {
     border: 2px solid blue;
-    inline-size: 150px;
+    inline-size: 200px;
     block-size: 40px;
-    text-align: center;
-    align-content: center;
+    /* text-align: center;
+    align-content: center; */
     /* flex-basis: auto; */
     /*
     flex-grow: 1;
@@ -32,6 +36,23 @@ body *::after {
   }
 
   .test1 {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .test2 {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .test3 {
+    flex-grow: 1;
+    order: -1;
+    flex-shrink: 2;
+  }
+  .test4 {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  /* .test1 {
     flex-grow: 1;
     flex-shrink: 0;
   }
@@ -46,7 +67,7 @@ body *::after {
   .test4 {
     order: -1;
     flex-grow: 1;
-  }
+  } */
 }
 
 .case-01 {
